@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2025-01-11 00:23:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_helmet": "2025-01-11 00:23:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:river": "2025-01-13 23:05:49 -0600",
+      "minecraft:desert": "2025-01-11 00:22:47 -0600"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

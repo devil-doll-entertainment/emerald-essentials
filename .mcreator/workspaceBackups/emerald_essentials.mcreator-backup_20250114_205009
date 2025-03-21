@@ -1,0 +1,473 @@
+{
+  "mod_elements": [
+    {
+      "name": "Emerald_ToolsPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_pickaxe.json",
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ToolsPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsAxe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_axe.json",
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ToolsAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsSword",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_sword.json",
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ToolsSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsShovel",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ToolsShovelItem.java",
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsHoe",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ToolsHoeItem.java",
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ArmorArmor",
+      "type": "armor",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_armor_armor_boots.json",
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_armor_armor_helmet.json",
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_armor_armor_leggings.json",
+          "src/main/java/net/mcreator/emeraldessentials/item/Emerald_ArmorArmorItem.java",
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_armor_armor_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_armor_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_armor_armor_body_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_armor_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Emerald_ArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_armor_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldToolsDagger",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_dagger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/models/item/emerald_tools_dagger.json",
+          "src/main/java/net/mcreator/emeraldessentials/item/EmeraldToolsDaggerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldToolsDaggerRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_tools_dagger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/emerald_essentials/recipes/emerald_tools_dagger_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IlussionalFlower",
+      "type": "plant",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ilussional_flower",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/emerald_essentials/blockstates/ilussional_flower.json",
+          "src/main/java/net/mcreator/emeraldessentials/world/features/plants/IlussionalFlowerFeature.java",
+          "src/main/java/net/mcreator/emeraldessentials/block/IlussionalFlowerBlock.java",
+          "src/main/resources/data/emerald_essentials/forge/biome_modifier/ilussional_flower_biome_modifier.json",
+          "src/main/resources/assets/emerald_essentials/models/block/ilussional_flower.json",
+          "src/main/resources/assets/emerald_essentials/models/item/ilussional_flower.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystBlind",
+      "type": "enchantment",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_blind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/enchantment/AmethystBlindEnchantment.java"
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystLevitate",
+      "type": "enchantment",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_levitate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/enchantment/AmethystLevitateEnchantment.java"
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystLevitateProcedure",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_levitate_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/procedures/AmethystLevitateProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystBlindProcedure",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_blind_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/procedures/AmethystBlindProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmeythistThief",
+      "type": "enchantment",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ameythist_thief",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/enchantment/AmeythistThiefEnchantment.java"
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystShadow",
+      "type": "enchantment",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shadow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/enchantment/AmethystShadowEnchantment.java"
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystShadowProcedure",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shadow_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/procedures/AmethystShadowProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Encantamientos"
+    },
+    {
+      "name": "AmethystThiefProcedure",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_thief_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/emeraldessentials/procedures/AmethystThiefProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Encantamientos"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.emerald_essentials.emerald_armor_armor_leggings": "Emerald_Armor Leggings",
+      "enchantment.emerald_essentials.amethyst_shadow": "Maldición de las sombras",
+      "item.emerald_essentials.emerald_tools_axe": "Hacha de Esmeralda",
+      "item.emerald_essentials.emerald_tools_sword": "Espada de Esmeralda",
+      "item.emerald_essentials.emerald_armor_armor_chestplate": "Emerald_Armor Chestplate",
+      "item.emerald_essentials.emerald_armor_armor_helmet": "Emerald_Armor Helmet",
+      "enchantment.emerald_essentials.amethyst_blind": "Maldición minera",
+      "item.emerald_essentials.emerald_armor_armor_boots": "Emerald_Armor Boots",
+      "item.emerald_essentials.emerald_tools_shovel": "Pala de Esmeralda",
+      "enchantment.emerald_essentials.amethyst_levitate": "Levitación",
+      "item.emerald_essentials.emerald_tools_pickaxe": "Pico de Esmeralda",
+      "item.emerald_essentials.emerald_tools_dagger": "Daga de Esmeralda",
+      "item.emerald_essentials.emerald_tools_hoe": "Azada de Esmeralda",
+      "enchantment.emerald_essentials.ameythist_thief": "Marcha del ladron",
+      "block.emerald_essentials.ilussional_flower": "Flor Ilusionista"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Encantamientos",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "emerald_essentials",
+    "modName": "Emerald Essentials",
+    "version": "1.0.0",
+    "author": "salva, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.emeraldessentials",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}
