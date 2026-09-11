@@ -1,0 +1,20 @@
+{
+  "description": {
+    "translate": "enchantment.emerald_essentials.amethyst_levitate"
+  },
+  "supported_items": "#minecraft:enchantable/chestplate",
+  "weight": 2,
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "chest"
+  ]
+}

@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "emerald_essentials"
+version = "${version}"
+displayName = "Emerald Essentials"
+authors = "Sxnnyside"
+description = "Emerald tools, balanced armor, mystical flora and amethyst enchantments."
+logoFile = "assets/emerald_essentials/textures/item/emerald_sword.png"
+
+[[dependencies.emerald_essentials]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.emerald_essentials]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"

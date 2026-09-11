@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "emerald_essentials",
+  "version": "${version}",
+  "name": "Emerald Essentials",
+  "description": "Emerald tools, balanced armor, mystical flora and amethyst enchantments.",
+  "authors": [
+    "Sxnnyside"
+  ],
+  "contact": {
+    "homepage": "https://github.com/devil-doll-entertainment/emerald-essentials"
+  },
+  "license": "MIT",
+  "icon": "assets/emerald_essentials/textures/item/emerald_sword.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.sxnnyside.emeraldessentials.fabric.EmeraldEssentialsFabric"
+    ],
+    "client": [
+      "com.sxnnyside.emeraldessentials.fabric.EmeraldEssentialsFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

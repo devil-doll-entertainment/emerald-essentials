@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+*/build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Java / IDE
+*.class
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+bin/
+
+# MCreator
+.mcreator/
+elements/
+*.mcreator
+mcreator.gradle
+
+# Minecraft Runs & Logs
+run/
+*/run/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Animoria cache & staged cleanup
+.animoria/

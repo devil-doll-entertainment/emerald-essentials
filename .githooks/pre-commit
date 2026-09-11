@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+echo "==> Running local quality gate (just check)..."
+just check
+
+echo "==> Quality gate passed! Proceeding with commit."
