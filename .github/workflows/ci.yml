@@ -35,7 +35,7 @@ jobs:
         run: just build
 
       - name: Upload Mod JARs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: emerald-essentials-jars
           path: |
