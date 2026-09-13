@@ -39,7 +39,7 @@ jobs:
         run: just build
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: |
             fabric/build/libs/emerald-essentials-fabric-*.jar
