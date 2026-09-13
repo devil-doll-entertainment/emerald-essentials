@@ -24,4 +24,21 @@ class ModToolTiersTest {
         ModToolTiers.EMERALD.getIncorrectBlocksForDrops(),
         "Incorrect blocks tag should be configured");
   }
+
+  @Test
+  @DisplayName(
+      "Ruby tool tier should have advanced intermediate stats between Diamond and Netherite")
+  void testRubyToolTierStats() {
+    assertEquals(1750, ModToolTiers.RUBY.getUses(), "Ruby tier durability should be 1750");
+    assertEquals(8.5F, ModToolTiers.RUBY.getSpeed(), "Ruby tier speed should be 8.5f");
+    assertEquals(
+        3.5F,
+        ModToolTiers.RUBY.getAttackDamageBonus(),
+        "Ruby tier attack damage bonus should be 3.5f");
+    assertEquals(
+        16, ModToolTiers.RUBY.getEnchantmentValue(), "Ruby tier enchantability should be 16");
+    assertNotNull(
+        ModToolTiers.RUBY.getIncorrectBlocksForDrops(),
+        "Incorrect blocks tag should be configured");
+  }
 }

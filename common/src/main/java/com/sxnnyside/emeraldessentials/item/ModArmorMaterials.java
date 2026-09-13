@@ -35,6 +35,24 @@ public final class ModArmorMaterials {
           0.0F,
           () -> Ingredient.of(Items.EMERALD));
 
+  public static final Holder<ArmorMaterial> RUBY =
+      register(
+          "ruby",
+          Util.make(
+              new EnumMap<>(ArmorItem.Type.class),
+              map -> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+              }),
+          18,
+          SoundEvents.ARMOR_EQUIP_DIAMOND,
+          2.0F,
+          0.05F,
+          () -> Ingredient.of(com.sxnnyside.emeraldessentials.init.ModItems.RUBY));
+
   private ModArmorMaterials() {}
 
   private static Holder<ArmorMaterial> register(
@@ -47,9 +65,7 @@ public final class ModArmorMaterials {
       Supplier<Ingredient> repairIngredient) {
     ResourceLocation id = ResourceLocation.fromNamespaceAndPath(EmeraldEssentials.MOD_ID, name);
     List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(id));
-    return Registry.registerForHolder(
-        BuiltInRegistries.ARMOR_MATERIAL,
-        id,
+    ArmorMaterial material =
         new ArmorMaterial(
             defense,
             enchantmentValue,
@@ -57,7 +73,12 @@ public final class ModArmorMaterials {
             repairIngredient,
             layers,
             toughness,
-            knockbackResistance));
+            knockbackResistance);
+    try {
+      return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, id, material);
+    } catch (IllegalStateException e) {
+      return Holder.direct(material);
+    }
   }
 
   public static void init() {

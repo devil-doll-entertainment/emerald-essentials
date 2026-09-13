@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_savanna",
+  "features": "emerald_essentials:thunder_poppy",
+  "step": "vegetal_decoration"
+}

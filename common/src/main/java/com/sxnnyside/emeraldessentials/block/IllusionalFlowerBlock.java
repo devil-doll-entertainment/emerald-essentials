@@ -40,6 +40,14 @@ public class IllusionalFlowerBlock extends FlowerBlock {
   }
 
   @Override
+  protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
+    return super.mayPlaceOn(state, level, pos)
+        || state.is(net.minecraft.tags.BlockTags.BASE_STONE_OVERWORLD)
+        || state.is(net.minecraft.world.level.block.Blocks.SCULK)
+        || state.is(net.minecraft.world.level.block.Blocks.MOSS_BLOCK);
+  }
+
+  @Override
   public VoxelShape getShape(
       BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
     return SHAPE;
@@ -55,6 +63,9 @@ public class IllusionalFlowerBlock extends FlowerBlock {
 
   @Override
   public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
+    if (!com.sxnnyside.emeraldessentials.config.ModConfig.get().isEnableFlowerParticles()) {
+      return;
+    }
     if (random.nextInt(4) == 0) {
       double x = pos.getX() + 0.5D + (random.nextDouble() - 0.5D) * 0.4D;
       double y = pos.getY() + 0.6D + random.nextDouble() * 0.3D;

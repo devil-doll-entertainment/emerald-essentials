@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "emerald_essentials:block/amethyst_altar_top",
+    "bottom": "emerald_essentials:block/amethyst_altar_bottom",
+    "side": "emerald_essentials:block/amethyst_altar_side"
+  }
+}

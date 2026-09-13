@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "emerald_essentials:void_chrysanthemum",
+  "step": "vegetal_decoration"
+}

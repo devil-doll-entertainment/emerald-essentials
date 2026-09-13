@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "emerald_essentials:ruby"
+    },
+    "E": {
+      "item": "emerald_essentials:enchanted_emerald"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "pattern": [
+    " G ",
+    "RER",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:ruby_charm"
+  }
+}

@@ -12,5 +12,6 @@ public final class EmeraldEssentials {
 
   public static void init() {
     LOGGER.info("Initializing {}", MOD_NAME);
+    com.sxnnyside.emeraldessentials.config.ModConfig.load();
   }
 }

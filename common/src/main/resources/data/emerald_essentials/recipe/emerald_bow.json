@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " ES",
+    "E S",
+    " ES"
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:emerald_bow"
+  }
+}

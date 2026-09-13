@@ -1,0 +1,44 @@
+name: Sync Wiki
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'docs/wiki/**'
+      - '.github/workflows/wiki.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-wiki:
+    name: Sync Documentation to GitHub Wiki
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main Repository
+        uses: actions/checkout@v4
+
+      - name: Checkout Wiki Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: .github-wiki
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync Wiki Files
+        run: |
+          echo "==> Copying wiki documentation..."
+          cp -r docs/wiki/* .github-wiki/
+          cd .github-wiki
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes detected in wiki documentation."
+          else
+            git commit -m "docs(wiki): synchronize wiki documentation from master branch [skip ci]"
+            git push origin master
+            echo "==> Wiki synchronized successfully!"
+          fi

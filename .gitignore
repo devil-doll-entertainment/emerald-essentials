@@ -2,11 +2,24 @@
 .gradle/
 build/
 */build/
+**/build/
 out/
-!gradle/wrapper/gradle-wrapper.jar
+**/out/
+.gradletasknamecache
 
-# Java / IDE
+# Java / Compilation / Archives
 *.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+hs_err_pid*
+replay_pid*
+
+# IDEs & Editors
 .idea/
 *.iml
 *.ipr
@@ -16,21 +29,55 @@ out/
 .settings/
 .vscode/
 bin/
+*.swp
+*.swo
+*~
+*.bak
 
-# MCreator
+# MCreator (Legacy Purge)
 .mcreator/
 elements/
 *.mcreator
 mcreator.gradle
 
-# Minecraft Runs & Logs
+# Minecraft Runs, Logs & Dev Artifacts
 run/
 */run/
+**/run/
+logs/
+*/logs/
+**/logs/
 *.log
+*.log.gz
+crash-reports/
+*/crash-reports/
+**/crash-reports/
+saves/
+*/saves/
+**/saves/
+screenshots/
+*/screenshots/
+**/screenshots/
 
-# OS
+# OS Artifacts
 .DS_Store
+**/.DS_Store
+._*
 Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
 
-# Animoria cache & staged cleanup
+# Animoria Cache
 .animoria/
+
+# Data Generation Output
+src/main/generated/
+*/src/main/generated/
+**/src/main/generated/
+
+# Game Configs Created During Dev Runs
+config/emerald_essentials.json
+run/config/
+*/run/config/
+**/run/config/

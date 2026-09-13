@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emerald_essentials:item/ruby_hoe"
+  }
+}

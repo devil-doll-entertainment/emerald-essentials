@@ -1,0 +1,33 @@
+[versions]
+minecraft = "1.21.1"
+fabric-loader = "0.16.9"
+fabric-api = "0.104.0+1.21.1"
+neoforge = "21.1.77"
+parchment-minecraft = "1.21.1"
+parchment-mappings = "2024.11.17"
+loom = "1.7.4"
+moddev = "2.0.78"
+spotless = "6.25.0"
+checkstyle = "10.18.1"
+junit = "5.10.3"
+jetbrains-annotations = "26.0.2"
+gson = "2.11.0"
+modmenu = "11.0.3"
+geckolib = "4.7"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
+geckolib-fabric = { module = "software.bernie.geckolib:geckolib-fabric-1.21.1", version.ref = "geckolib" }
+geckolib-neoforge = { module = "software.bernie.geckolib:geckolib-neoforge-1.21.1", version.ref = "geckolib" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotations" }
+
+[plugins]
+fabric-loom = { id = "fabric-loom", version.ref = "loom" }
+neoforge-moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }

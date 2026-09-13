@@ -1,5 +1,6 @@
 package com.sxnnyside.emeraldessentials.item;
 
+import com.sxnnyside.emeraldessentials.init.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -15,7 +16,14 @@ public enum ModToolTiers implements Tier {
       8.0F,
       3.0F,
       22,
-      () -> Ingredient.of(Items.EMERALD));
+      () -> Ingredient.of(Items.EMERALD)),
+  RUBY(
+      BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+      1750,
+      8.5F,
+      3.5F,
+      16,
+      () -> Ingredient.of(ModItems.RUBY));
 
   private final TagKey<Block> incorrectBlocksForDrops;
   private final int uses;

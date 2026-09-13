@@ -22,9 +22,9 @@
 
 ## About
 
-**Emerald Essentials** brings purposeful utility to emeralds and amethysts in modern Minecraft.
+**Emerald Essentials** brings purposeful utility to emeralds, amethysts, and rubies in modern Minecraft.
 
-While vanilla emeralds serve primarily as trading currency and amethysts remain largely decorative, Emerald Essentials integrates them directly into survival progression through carefully balanced gear and unique mechanics without overshadowing endgame tiers.
+While vanilla emeralds serve primarily as trading currency and amethysts remain largely decorative, Emerald Essentials integrates them directly into survival progression through carefully balanced gear, subterranean flora, alchemy, and unique mechanics without overshadowing endgame tiers.
 
 The mod functions across both Fabric and NeoForge using a single shared codebase with native 1.21.1 data-driven mechanics.
 
@@ -36,13 +36,14 @@ This is a Devil Doll Entertainment project, part of the Sxnnyside Project.
 
 ## Features
 
-- **Emerald Tools & Dagger**: Diamond-equivalent mining tier with 550 durability and an agile dagger built for stealth.
-- **Balanced Emerald Armor**: 19 total armor points with +1.0 toughness, situated between iron and diamond with high enchantability.
-- **Amethyst Levitation**: Chestplate enchantment that propels attackers upward upon dealing damage.
-- **Curse of Blind Mining**: Helmet curse granting Haste II in pitch blackness at the cost of limited vision.
-- **Curse of the Shadows**: Leggings curse granting tactical invisibility while crouching, penalizing uncalculated sprints.
-- **Thief's Stride**: Boots enchantment providing speed in arid biomes and slowing nearby undead in frozen climates.
-- **Illusional Flower**: Mystical cave plant emitting light and disorienting confusion upon contact.
+- **Emerald Equipment**: Complete tier of emerald tools, stealth daggers with backstab synergy, bows, shields, and high-enchantability armor.
+- **Ruby Mineral Tier**: Subterranean ruby ore, blocks, tools, armor with knockback resistance, and geothermal transmutation.
+- **13 Magical Flora Blocks**: Subterranean and dimensional flora with contact effects, soft luminescence, and alchemy paths.
+- **Dedicated Amethyst Altar**: Standalone infusion table for infusing equipment with amethyst enchantments using shards and XP.
+- **Subterranean Fauna & Boss**: Animated creatures (*Emerald Scuttler*, *Amethyst Scarab*, *Mushroom Bup*, *Mantabu*) and the seismic *Emerald Titan* boss.
+- **Endgame Artifacts**: Legendary *Crown of the Gem Lord*, *Earth Staff*, *Emerald Mirror*, and *Amethyst Resonator*.
+- **Native Multi-Loader**: Single shared `:common` engine running natively on **Fabric** and **NeoForge** 1.21.1.
+- **18 Languages Supported**: Full in-game translations and dual effect/lore tooltips across 18 languages.
 
 ## Installation
 
@@ -61,14 +62,21 @@ cd emerald-essentials
 just build
 ```
 
+The compiled mod JARs will be located in:
+- Fabric: `fabric/build/libs/emerald-essentials-fabric-1.1.0.jar`
+- NeoForge: `neoforge/build/libs/emerald-essentials-neoforge-1.1.0.jar`
+
 ## Usage
 
 ```bash
-# Verify environment and toolchain
+# Verify environment, toolchain, and configure git hooks
 just install
 
-# Launch development test client
+# Launch Fabric development client
 just dev
+
+# Launch NeoForge development client
+just dev-neoforge
 
 # Run full quality gate
 just check
@@ -83,7 +91,7 @@ emerald-essentials/
 └── neoforge/     # NeoForge entrypoint and event bus listeners
 ```
 
-For a detailed breakdown, see [CLAUDE.md](CLAUDE.md).
+For a detailed breakdown, see [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Contributing
 

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "C": {
+      "item": "emerald_essentials:emerald_core"
+    },
+    "A": {
+      "item": "emerald_essentials:amethyst_resonator"
+    },
+    "R": {
+      "item": "emerald_essentials:ruby_block"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "GAG",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:emerald_staff"
+  }
+}

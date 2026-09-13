@@ -1,7 +1,8 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT' apply false
-    id 'net.neoforged.moddev' version '2.0.78' apply false
-    id 'com.diffplug.spotless' version '6.25.0' apply false
+    alias(libs.plugins.fabric.loom) apply false
+    alias(libs.plugins.neoforge.moddev) apply false
+    alias(libs.plugins.spotless) apply false
+    id 'maven-publish'
 }
 
 allprojects {
@@ -11,8 +12,13 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'maven-publish'
     apply plugin: 'com.diffplug.spotless'
     apply plugin: 'checkstyle'
+
+    base {
+        archivesName = "${project.archives_base_name}-${project.name}"
+    }
 
     java {
         toolchain {
@@ -24,13 +30,14 @@ subprojects {
     spotless {
         java {
             googleJavaFormat('1.22.0')
+            removeUnusedImports()
             trimTrailingWhitespace()
             endWithNewline()
         }
     }
 
     checkstyle {
-        toolVersion = '10.18.1'
+        toolVersion = libs.versions.checkstyle.get()
         configFile = rootProject.file('config/checkstyle/checkstyle.xml')
         ignoreFailures = false
         maxWarnings = 0
@@ -46,11 +53,23 @@ subprojects {
             name = 'NeoForged'
             url = 'https://maven.neoforged.net/releases'
         }
+        maven {
+            name = 'GeckoLib'
+            url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        }
     }
 
     tasks.withType(JavaCompile).configureEach {
         options.encoding = 'UTF-8'
         options.release = 21
         options.compilerArgs << '-Xlint:all' << '-Xlint:-processing' << '-Xlint:-deprecation' << '-Xlint:-this-escape'
+    }
+
+    tasks.withType(Copy).configureEach {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+
+    tasks.withType(Jar).configureEach {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }

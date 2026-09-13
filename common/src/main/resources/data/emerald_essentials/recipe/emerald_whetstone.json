@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "emerald_essentials:enchanted_emerald"
+    },
+    "G": {
+      "item": "minecraft:grindstone"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    " E ",
+    " G ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:emerald_whetstone"
+  }
+}

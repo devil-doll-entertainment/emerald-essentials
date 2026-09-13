@@ -1,13 +1,13 @@
 plugins {
-    id 'net.neoforged.moddev'
+    alias(libs.plugins.neoforge.moddev)
 }
 
 neoForge {
-    version = project.neoforge_version
+    version = libs.versions.neoforge.get()
 
     parchment {
-        minecraftVersion = project.parchment_minecraft_version
-        mappingsVersion = project.parchment_version
+        minecraftVersion = libs.versions.parchment.minecraft.get()
+        mappingsVersion = libs.versions.parchment.mappings.get()
     }
 
     runs {
@@ -19,28 +19,50 @@ neoForge {
             server()
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', project.file('src/main/generated/').getAbsolutePath(), '--existing', project.file('../common/src/main/resources/').getAbsolutePath()
+        }
     }
 
     mods {
         "${project.mod_id}" {
             sourceSet sourceSets.main
+            sourceSet project(':common').sourceSets.main
+        }
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir project(':common').file('src/main/resources')
         }
     }
 }
 
 dependencies {
-    compileOnly project(':common')
-}
-
-tasks.named('compileJava', JavaCompile) {
-    source project(':common').sourceSets.main.allSource
+    compileOnly libs.jetbrains.annotations
+    implementation libs.geckolib.neoforge
+    implementation project(path: ':common', configuration: 'namedElements')
 }
 
 processResources {
-    from project(':common').sourceSets.main.resources
-    inputs.property 'version', project.version
-    inputs.property 'minecraft_version', project.minecraft_version
+    def projectVersion = project.version
+    def mcVersion = libs.versions.minecraft.get()
+    inputs.property 'version', projectVersion
+    inputs.property 'minecraft_version', mcVersion
     filesMatching('META-INF/neoforge.mods.toml') {
-        expand 'version': project.version, 'minecraft_version': project.minecraft_version
+        expand 'version': projectVersion, 'minecraft_version': mcVersion
     }
+}
+
+tasks.named('jar') {
+    from(project(':common').sourceSets.main.output)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.named('sourcesJar') {
+    from(project(':common').sourceSets.main.allSource)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

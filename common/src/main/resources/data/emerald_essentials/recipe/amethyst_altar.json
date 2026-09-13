@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "R": {
+      "item": "emerald_essentials:ruby"
+    },
+    "D": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ARA",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:amethyst_altar"
+  }
+}

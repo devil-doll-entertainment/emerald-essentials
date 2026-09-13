@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "emerald_essentials:emerald_helmet",
+    "emerald_essentials:emerald_chestplate",
+    "emerald_essentials:emerald_leggings",
+    "emerald_essentials:emerald_boots",
+    "emerald_essentials:ruby_helmet",
+    "emerald_essentials:ruby_chestplate",
+    "emerald_essentials:ruby_leggings",
+    "emerald_essentials:ruby_boots"
+  ]
+}

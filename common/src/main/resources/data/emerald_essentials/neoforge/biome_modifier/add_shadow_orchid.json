@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:has_structure/swamp_hut",
+  "features": "emerald_essentials:shadow_orchid",
+  "step": "vegetal_decoration"
+}

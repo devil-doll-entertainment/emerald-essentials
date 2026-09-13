@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -41,8 +42,10 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            fabric/build/libs/fabric-*.jar
-            neoforge/build/libs/neoforge-*.jar
+            fabric/build/libs/emerald-essentials-fabric-*.jar
+            neoforge/build/libs/emerald-essentials-neoforge-*.jar
+            !fabric/build/libs/*-sources.jar
+            !neoforge/build/libs/*-sources.jar
           generate_release_notes: true
           draft: false
           prerelease: false

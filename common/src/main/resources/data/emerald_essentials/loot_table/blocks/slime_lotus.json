@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "emerald_essentials:slime_lotus"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "emerald_essentials:blocks/slime_lotus"
+}

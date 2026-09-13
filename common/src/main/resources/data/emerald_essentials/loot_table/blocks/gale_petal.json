@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "emerald_essentials:gale_petal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "emerald_essentials:blocks/gale_petal"
+}

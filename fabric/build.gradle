@@ -1,25 +1,54 @@
 plugins {
-    id 'fabric-loom'
+    alias(libs.plugins.fabric.loom)
+}
+
+repositories {
+    maven {
+        name = 'TerraformersMC'
+        url = 'https://maven.terraformersmc.com/'
+    }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    minecraft libs.minecraft
     mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    modImplementation libs.fabric.loader
+    modImplementation libs.fabric.api
+    modCompileOnly libs.modmenu
+    compileOnly libs.jetbrains.annotations
+    modImplementation libs.geckolib.fabric
 
     implementation project(path: ':common', configuration: 'namedElements')
 }
 
-tasks.named('compileJava', JavaCompile) {
-    source project(':common').sourceSets.main.allSource
+sourceSets {
+    main {
+        resources {
+            srcDir project(':common').file('src/main/resources')
+        }
+    }
+}
+
+fabricApi {
+    configureDataGeneration()
 }
 
 processResources {
-    from project(':common').sourceSets.main.resources
-    inputs.property 'version', project.version
-    inputs.property 'minecraft_version', project.minecraft_version
+    def projectVersion = project.version
+    def mcVersion = libs.versions.minecraft.get()
+    inputs.property 'version', projectVersion
+    inputs.property 'minecraft_version', mcVersion
     filesMatching('fabric.mod.json') {
-        expand 'version': project.version, 'minecraft_version': project.minecraft_version
+        expand 'version': projectVersion, 'minecraft_version': mcVersion
     }
+}
+
+tasks.named('jar') {
+    from(project(':common').sourceSets.main.output)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.named('sourcesJar') {
+    from(project(':common').sourceSets.main.allSource)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

@@ -27,5 +27,16 @@ class EnchantmentKeysTest {
     assertEquals(
         EmeraldEssentials.MOD_ID, ModEnchantmentHandler.AMETHYST_THIEF.location().getNamespace());
     assertEquals("amethyst_thief", ModEnchantmentHandler.AMETHYST_THIEF.location().getPath());
+
+    assertEquals(
+        EmeraldEssentials.MOD_ID,
+        ModEnchantmentHandler.AMETHYST_RESONANCE.location().getNamespace());
+    assertEquals(
+        "amethyst_resonance", ModEnchantmentHandler.AMETHYST_RESONANCE.location().getPath());
+
+    assertEquals(
+        EmeraldEssentials.MOD_ID,
+        ModEnchantmentHandler.AMETHYST_VITALITY.location().getNamespace());
+    assertEquals("amethyst_vitality", ModEnchantmentHandler.AMETHYST_VITALITY.location().getPath());
   }
 }

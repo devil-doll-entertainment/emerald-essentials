@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "emerald_essentials:emerald_core"
+    },
+    "H": {
+      "item": "emerald_essentials:emerald_helmet"
+    },
+    "R": {
+      "item": "emerald_essentials:ruby"
+    },
+    "E": {
+      "item": "emerald_essentials:enchanted_emerald"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "RER",
+    "RCR",
+    "NHN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:emerald_crown"
+  }
+}

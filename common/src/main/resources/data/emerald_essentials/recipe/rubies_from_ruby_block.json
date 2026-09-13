@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "emerald_essentials:ruby_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "emerald_essentials:ruby"
+  }
+}

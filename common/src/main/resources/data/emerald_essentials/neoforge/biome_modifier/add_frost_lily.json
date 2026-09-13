@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:has_structure/igloo",
+  "features": "emerald_essentials:frost_lily",
+  "step": "vegetal_decoration"
+}

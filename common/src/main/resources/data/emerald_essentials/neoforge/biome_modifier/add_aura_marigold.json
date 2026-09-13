@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "emerald_essentials:aura_marigold",
+  "step": "vegetal_decoration"
+}

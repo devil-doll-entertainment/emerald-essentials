@@ -44,7 +44,7 @@ Public disclosure is expected after a fix is available. If a fix isn't possible,
 
 ## Scope
 
-This policy covers the **emerald-essentials** repository only.
+This policy covers the **Emerald Essentials** repository only.
 For ecosystem-wide security concerns, use the email above.
 
 ---

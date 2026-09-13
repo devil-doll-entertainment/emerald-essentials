@@ -8,10 +8,13 @@
     "Sxnnyside"
   ],
   "contact": {
-    "homepage": "https://github.com/devil-doll-entertainment/emerald-essentials"
+    "homepage": "https://github.com/devil-doll-entertainment/emerald-essentials",
+    "sources": "https://github.com/devil-doll-entertainment/emerald-essentials",
+    "issues": "https://github.com/devil-doll-entertainment/emerald-essentials/issues",
+    "email": "support.sxnnyside@sxnnysideproject.com"
   },
   "license": "MIT",
-  "icon": "assets/emerald_essentials/textures/item/emerald_sword.png",
+  "icon": "assets/emerald_essentials/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -19,12 +22,19 @@
     ],
     "client": [
       "com.sxnnyside.emeraldessentials.fabric.EmeraldEssentialsFabricClient"
+    ],
+    "fabric-datagen": [
+      "com.sxnnyside.emeraldessentials.fabric.datagen.EmeraldEssentialsFabricDataGenerator"
+    ],
+    "modmenu": [
+      "com.sxnnyside.emeraldessentials.fabric.ModMenuIntegration"
     ]
   },
   "depends": {
     "fabricloader": ">=0.16.0",
     "minecraft": "~1.21.1",
     "java": ">=21",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "geckolib": ">=4.6"
   }
 }

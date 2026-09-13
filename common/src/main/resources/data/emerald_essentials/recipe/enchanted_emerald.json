@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "ADA",
+    "DED",
+    "ADA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:enchanted_emerald"
+  }
+}

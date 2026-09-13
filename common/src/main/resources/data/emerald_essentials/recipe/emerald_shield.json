@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "W": {
+      "item": "minecraft:oak_planks"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    "EWE",
+    "WSW",
+    " E "
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:emerald_shield"
+  }
+}

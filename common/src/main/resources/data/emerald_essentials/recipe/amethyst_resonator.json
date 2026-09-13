@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "emerald_essentials:enchanted_emerald"
+    },
+    "R": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "  A",
+    " E ",
+    "R  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "emerald_essentials:amethyst_resonator"
+  }
+}

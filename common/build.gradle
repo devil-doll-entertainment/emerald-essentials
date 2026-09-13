@@ -1,14 +1,22 @@
 plugins {
-    id 'fabric-loom'
+    alias(libs.plugins.fabric.loom)
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    minecraft libs.minecraft
     mappings loom.officialMojangMappings()
     compileOnly "org.spongepowered:mixin:0.8.5"
+    compileOnly libs.jetbrains.annotations
+    compileOnly libs.gson
+    // Compiled against the Fabric artifact purely for its loader-agnostic API
+    // surface (GeoEntity, GeoModel, ...); each platform module brings in its
+    // own real implementation (geckolib-fabric / geckolib-neoforge).
+    modCompileOnly libs.geckolib.fabric
 
-    testImplementation "org.junit.jupiter:junit-jupiter:5.10.3"
-    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    testImplementation libs.junit.jupiter
+    testImplementation libs.gson
+    testRuntimeOnly libs.junit.platform.launcher
+    testCompileOnly libs.jetbrains.annotations
 }
 
 test {
